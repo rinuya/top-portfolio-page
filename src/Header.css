@@ -1,0 +1,53 @@
+/* colors: #DCF0F1 #5BBBBA #BBEE2E3
+font colors: color:rgb(20, 20, 20);     color:rgb(30, 30, 30); 
+*/
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr;
+  
+}
+
+.profilePicture{
+    padding: 25px 10px 10px 10px;
+    /* bottom: 110px; */
+    filter: brightness(0.65);
+    
+}
+img{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+    border-radius: 3%;
+}
+
+.header>p{
+    font-size: 2.6rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px 1px #000000;
+    position: absolute;
+    justify-self: center;
+    top: 260px;
+}
+
+.aboutme{
+    justify-self: center;
+    padding: 15px;
+    max-width: 35ch;
+}
+.aboutme>h1{
+    color:rgb(20, 20, 20);
+    text-align: center;
+}
+.aboutme>p{
+    text-align: start;
+    color:rgb(30, 30, 30);
+}
+.verticalDiv{
+    /* needs to have different scaling on other sizes  */
+    position: absolute;
+    background-color: #223a66;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 130px;
+    transform: rotate(-25deg) scale(3);
+    width: 1000px;
+    top: -190px;
+}
