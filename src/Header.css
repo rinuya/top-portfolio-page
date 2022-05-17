@@ -12,9 +12,11 @@ font colors: color:rgb(20, 20, 20);     color:rgb(30, 30, 30);
     padding: 25px 10px 10px 10px;
     /* bottom: 110px; */
     filter: brightness(0.65);
+    display: flex;
+    justify-self: center;
     
 }
-img{
+.profilePicture>img{
     box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
     border-radius: 3%;
 }
@@ -30,7 +32,7 @@ img{
 
 .aboutme{
     justify-self: center;
-    padding: 15px;
+    padding: 22px;
     max-width: 35ch;
 }
 .aboutme>h1{
@@ -39,7 +41,6 @@ img{
 }
 .aboutme>p{
     text-align: start;
-    color:rgb(30, 30, 30);
 }
 .verticalDiv{
     /* needs to have different scaling on other sizes  */
@@ -50,4 +51,17 @@ img{
     transform: rotate(-25deg) scale(3);
     width: 1000px;
     top: -190px;
+}
+
+.githubIcon{
+    width: 2rem;
+}
+
+.skipToContact{
+ 
+}
+
+.aboutme>div{
+    display: flex;
+    justify-content: center;
 }

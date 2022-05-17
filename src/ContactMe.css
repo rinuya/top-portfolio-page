@@ -1,0 +1,25 @@
+.ContactMe{
+    background-color: #223a66;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ContactMe>div{
+    max-width: 35ch;
+    color: white;
+}
+
+.ContactMe>div>p{
+    color: white;
+    padding: 1ch;
+}
+
+.footerImg{
+    object-fit: contain;
+}
+
+.ContactMe>div>h1{
+   
+}
