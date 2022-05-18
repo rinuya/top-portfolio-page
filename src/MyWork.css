@@ -4,6 +4,8 @@
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
+  
+   
 }
 .projectContainer{
     max-width: 300px;
@@ -42,4 +44,30 @@
 
 .projectContainer:hover{
     transform: scale(1.05);
+}
+
+
+
+@media (min-width: 500px) {
+    .projects{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5ch;
+        padding-top: 5ch
+    }
+}
+
+@media (min-width: 1000px) {
+    .projectContainer{
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .projects{
+        gap: 10ch;
+        padding: 5ch;
+    }
 }

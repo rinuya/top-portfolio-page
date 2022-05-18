@@ -11,11 +11,12 @@ function MyWork() {
         <div className="body">
             <h1>My Work</h1>
             {/* Project 1 */}
+            <div className="projects">
             <div className="projectContainer">
                 <picture className="projectPicture">
                     <source
                         srcSet={memorycardgamew400}
-                        media="(min-width: 500px)"
+                        media="(min-width: 1000px)"
                     />
                     <img 
                         src={memorycardgamew300}
@@ -40,7 +41,7 @@ function MyWork() {
                 <picture className="projectPicture">
                     <source
                         srcSet={shoppingcartw400}
-                        media="(min-width: 500px)"
+                        media="(min-width: 1000px)"
                     />
                     <img 
                         src={shoppingcartw300}
@@ -65,7 +66,7 @@ function MyWork() {
                 <picture className="projectPicture">
                     <source
                         srcSet={memorycardgamew400}
-                        media="(min-width: 500px)"
+                        media="(min-width: 1000px)"
                     />
                     <img 
                         src={memorycardgamew300}
@@ -90,7 +91,7 @@ function MyWork() {
                 <picture className="projectPicture">
                     <source
                         srcSet={shoppingcartw400}
-                        media="(min-width: 500px)"
+                        media="(min-width: 1000px)"
                     />
                     <img 
                         src={shoppingcartw300}
@@ -115,7 +116,7 @@ function MyWork() {
                 <picture className="projectPicture">
                     <source
                         srcSet={memorycardgamew400}
-                        media="(min-width: 500px)"
+                        media="(min-width: 1000px)"
                     />
                     <img 
                         src={memorycardgamew300}
@@ -140,7 +141,7 @@ function MyWork() {
                 <picture className="projectPicture">
                     <source
                         srcSet={shoppingcartw400}
-                        media="(min-width: 500px)"
+                        media="(min-width: 1000px)"
                     />
                     <img 
                         src={shoppingcartw300}
@@ -159,6 +160,7 @@ function MyWork() {
                         <Icon path={mdiOpenInNew} title="User Profile" size={1.2} color="black" />
                     </a>
                 </div>
+            </div>
             </div>
         </div>
     )

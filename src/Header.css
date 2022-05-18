@@ -3,8 +3,8 @@ font colors: color:rgb(20, 20, 20);     color:rgb(30, 30, 30);
 */
 
 .header{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
   
 }
 
@@ -21,7 +21,7 @@ font colors: color:rgb(20, 20, 20);     color:rgb(30, 30, 30);
     border-radius: 3%;
 }
 
-.header>p{
+.rinuya{
     font-size: 2.6rem;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px 1px #000000;
@@ -30,26 +30,24 @@ font colors: color:rgb(20, 20, 20);     color:rgb(30, 30, 30);
     top: 260px;
 }
 
-.aboutme{
+.aboutmeholder{
     justify-self: center;
     padding: 22px;
     max-width: 35ch;
 }
-.aboutme>h1{
+.rinuyadescription>h1{
     color:rgb(20, 20, 20);
     text-align: center;
 }
-.aboutme>p{
-    text-align: start;
-}
+
 .verticalDiv{
     /* needs to have different scaling on other sizes  */
     position: absolute;
     background-color: #223a66;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 130px;
+    height: 200px;
     transform: rotate(-25deg) scale(3);
-    width: 1000px;
+    width: 10000px;
     top: -190px;
 }
 
@@ -57,11 +55,69 @@ font colors: color:rgb(20, 20, 20);     color:rgb(30, 30, 30);
     width: 2rem;
 }
 
-.skipToContact{
- 
+
+.aboutmeholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
 }
 
-.aboutme>div{
-    display: flex;
-    justify-content: center;
+@media (min-width: 500px) {
+    .verticalDiv{
+        transform: rotate(-18deg) scale(2);
+        width: 10000px;
+        top: -50px;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .verticalDiv{
+        /* needs to have different scaling on other sizes  */
+        height: 300px;
+        transform: rotate(-6deg) scale(2);
+        width: 10000px;
+        top: -250px;
+    }
+
+    .aboutmeholder{
+        position: relative;
+        left: 210px;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       background-color: rgb(255, 255, 255);
+       min-width: 300px;
+       max-height: 300px;
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       margin-top: 4ch;
+       align-items: center;
+        margin-bottom: 6ch;
+    }
+    .profilePicture{
+        position: absolute;
+        left: -420px;
+        float: left;
+        transform: translate(0px, -6px) ;
+    }
+    .rinuyadescription{
+        /* float: right; */
+        max-width: 35ch;
+       
+    }
+    .aboutmeholder>div{
+        position: relative;
+        top:20px;
+      align-self:flex-end;
+    }
+    h1{
+        margin: 0.5ch;
+    }
+    .rinuya{
+        font-size: 3rem;
+        position: absolute;
+        left: -270px;
+        top: 180px;
+    }
 }
